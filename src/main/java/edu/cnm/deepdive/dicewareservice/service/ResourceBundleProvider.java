@@ -12,10 +12,7 @@ public class ResourceBundleProvider implements WordListProvider {
     private final List<String> words;
 
     public ResourceBundleProvider(ResourceBundle bundle) {
-        words = new LinkedList<>();
-        for (String key: bundle.keySet()) {
-            words.add(bundle.getString(key));
-        }
+        words = new LinkedList<>(bundle.keySet());
     } 
 
 
