@@ -5,4 +5,5 @@ import java.util.List;
 public interface WordListProvider {
 
     List<String> getWords();
+
 }
